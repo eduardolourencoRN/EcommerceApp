@@ -1,30 +1,31 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import colors from '../Utils/colors';
 
 const TodaySaller = () => {
   return (
     <View style={styles.container}>
-      <View style={{alignItems: 'center', flexDirection:'row', gap:10}}>
-    <Text style={styles.text}>Today Sale!</Text>
-      <Text style={styles.textCount}> 04:43:23</Text>
+      <View style={{alignItems: 'center', flexDirection: 'row', gap: 10}}>
+        <Text style={styles.text}>Today Sale!</Text>
+        <Text style={styles.textCount}> 04:43:23</Text>
       </View>
-  
-            <Text style={styles.textSeeMore}>See more</Text>
+<TouchableOpacity>
+      <Text style={styles.textSeeMore}>See more</Text>
+</TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    maxWidth:'95%',
+    maxWidth: '95%',
     backgroundColor: '#f0f0f0',
     marginTop: 35,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    height:40,
-    marginLeft:10
+    height: 40,
+    marginLeft: 10,
     
   },
   text: {
@@ -41,10 +42,10 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 0, 0, 1)',
     fontWeight: '400',
   },
-  textSeeMore:{
+  textSeeMore: {
     fontSize: 20,
     color: colors.sixth,
-  }
+  },
 });
 
 export default TodaySaller;
