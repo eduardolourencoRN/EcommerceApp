@@ -4,6 +4,6 @@ export default {
     tertiary: 'rgb(240,255,255)',
     fourth: '#AEAEAE',
     fifth: '#dedede',
-    sixth: '#1C1C1C'
+    sixth: '#272727'
 
 };

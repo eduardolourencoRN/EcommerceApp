@@ -11,7 +11,7 @@ const IconButton = ({title}) => {
       <Icon
         name={title}
         size={23}
-        color={colors.sixth}
+        color={'#272727'}
       />
     </View>
   );
