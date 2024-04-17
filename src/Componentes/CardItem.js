@@ -38,14 +38,17 @@ const CardItem = ({title}) => {
         return (
           <View key={item.id} style={styles.item}>
             {image ? (
-              <View style={{ borderRadius: 20, height: 250, maxWidth: '100%', width: '90%' }}>
+              <View style={{ borderRadius: 20, height:290,paddingBottom:20, maxWidth: '100%', width: '90%' }}>
                 <Image
                   source={{ uri: image }}
                   style={styles.image}
                 />
                 <View style={{ maxWidth: '100%', width: '100%' }}>
                   <Text style={{ color: 'black', fontWeight: '600' }}>{item.title}</Text>
+                 
                   <Text style={{ color: 'gray', fontWeight: '600' }} numberOfLines={1}>{item.description}</Text>
+                  <Text style={{ color: 'green', fontWeight: '600' }} numberOfLines={1}>R$ {item.price},90</Text>
+               
                 </View>
               </View>
             ) : (

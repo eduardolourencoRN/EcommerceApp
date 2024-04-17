@@ -17,7 +17,7 @@ export const HomeScreen = ({ navigation }) => (
     <CarrouselBanner/>
 </View>
 
-<View style={{width:width, height:height, maxWidth:'95%'}}>
+<View style={{width:width, height:height * 4, maxWidth:'95%'}}>
   <CategoryCarousel/>
   <TodaySaller/>
   <CardItem/>
@@ -25,5 +25,4 @@ export const HomeScreen = ({ navigation }) => (
   </View>
   </ScrollView>
 );
-
 
